@@ -1,4 +1,65 @@
 
+# Flutter'da Dio'nun Etkili Kullanımı
+
+Dio Metotları ve Dio Interceptor sınıfının kullanımı.
+
+
+
+
+
+## İçerik
+
+- API Kaynağı
+- Dio Get Metotu
+- Dio Post Metotu
+- Dio Put Metotu
+- Dio Delete Metotu
+- Dio Error Handling
+- Dio Interceptors Sınıfı
+
+
+  
+
+## API Kaynağı
+
+#### Gerekli Dio işlemleri için kullanılan API kaynağı.
+
+
+
+```http
+  https://jsonplaceholder.typicode.com/
+```
+
+
+
+
+
+  
+
+## Dio Get Metotu
+
+- Get Metotu okuma işlemleri için kullanılır. Yapılan istek sonunda bize dönen verileri baz alarak gerekli widget çizimlerini gerçekleştiririz.
+
+
+  
+
+
+```bash
+  Future<Post> fetchPost (int postId) async {
+ try {
+  final response = await dio.get(postsEndpoint + "/$postId");
+  debugPrint(response.toString());
+  return Post.fromJson(response.data);
+ } on DioError catch (e){
+  debugPrint("Status code ${e.response?.statusCode.toString()}");
+  throw Exception("Failed to load post : $postId");
+ }
+}
+```
+
+  
+
+Yapılan Get isteği sonrasında alınan datalar 'fromJson' metotu ile Dart programlama dilinin widgetları doğru şekilde oluşturulabilmesi için tanımlandı
 
 ## Dio Post Metotu
 
