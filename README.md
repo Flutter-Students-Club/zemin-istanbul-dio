@@ -9,6 +9,8 @@ Dio Metotları ve Dio Interceptor sınıfının kullanımı.
 
 ## İçerik
 
+
+- Paket Kurulumu
 - API Kaynağı
 - Dio Get Metotu
 - Dio Post Metotu
@@ -16,8 +18,21 @@ Dio Metotları ve Dio Interceptor sınıfının kullanımı.
 - Dio Delete Metotu
 - Dio Error Handling
 - Dio Interceptors Sınıfı
+- Kaynaklar
 
+## Paket Kurulumu
 
+```
+dependencies:
+  dio: ^4.0.6
+```
+
+- Projeye import edilmesi
+
+```
+import 'package:dio/dio.dart';
+
+```
   
 
 ## API Kaynağı
@@ -231,7 +246,7 @@ switch(err.type){
     break;
   }
 ```
-## Son
+## Kaynakça
 
-Dio paketinin bize sağladığı olanaklar oldukça fazla. Bu repo Dio'yu tanımaya yardımcı olacaktır.
+https://pub.dev/packages/dio
 
