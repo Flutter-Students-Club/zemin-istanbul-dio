@@ -6,6 +6,14 @@ Dio Metotları ve Dio Interceptor sınıfının kullanımı.
 
 
 
+<img src="Ekran Resmi 2022-09-07 23.47.44.png" width="25%"></img> 
+
+
+<img src="Ekran Resmi 2022-09-07 23.48.04.png" width="25%"></img> 
+
+
+<img src="Ekran Resmi 2022-09-07 23.48.21.png" width="25%"></img> 
+
 
 ## İçerik
 
