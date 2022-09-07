@@ -69,11 +69,11 @@ class _DioExampleState extends State<DioExample> {
           else if(snapshot.hasError){
             return Text('${snapshot.error}');
           }
-          return CircularProgressIndicator();
+          return const CircularProgressIndicator.adaptive();
         },),
         Center(child: Wrap(spacing: 10, alignment: WrapAlignment.center,children: [
           ElevatedButton(onPressed: (){
-            post = dioClient.fetchPost(101);
+            post = dioClient.fetchPost(1);
             setState(() {
               requesting = true;
             });

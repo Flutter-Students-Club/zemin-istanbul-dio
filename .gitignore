@@ -42,3 +42,13 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+
+
+# Android Studio will place build artifacts here
+/ios
+/macos
+/linux
+/web
+/windows
+/android
